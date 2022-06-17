@@ -15,7 +15,7 @@
         <div class="container">
             <div class="d-flex flex-column align-items-center">
                 <button @click="generateMail()" class="btn btn-primary">Generate 10 mail address</button>
-                <ul >
+                <ul v-if="counterAjax === 10">
                     <li v-for="mail in mailList">{{mail}}</li>
                 </ul>    
             </div>
