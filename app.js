@@ -14,8 +14,9 @@ new Vue ({
                 .then((axiosResp)=>{
                     this.mailList.push(axiosResp.data.response);
                 })
-                console.log(this.counterAjax)
+                console.log(this.counterAjax);
             }
+            this.counterAjax = 0;
         },
     }
 })
